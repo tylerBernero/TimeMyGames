@@ -9,6 +9,8 @@
   "author": "Tyler",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "howlongtobeat": "^1.8.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "bin": "index.js"
 }

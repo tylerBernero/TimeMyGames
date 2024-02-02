@@ -1,15 +1,22 @@
-// let hltb = require('howlongtobeat');
-// let hltbService = new hltb.HowLongToBeatService();
-const express= require('express');
-const app = express();
-const port = 5000;
+const prompt = require('prompt-sync')();
+const hltb = require('howlongtobeat');
+let hltbService = new hltb.HowLongToBeatService();
 
-console.log("Starting App. . .");
-app.get('/', (req, res) => {        //get requests to the root ("/") will route here
-    res.sendFile('index.html', {root: __dirname});      //server responds by sending the index.html file to the client's browser
-                                                        //the .sendFile method needs the absolute path to the file, see: https://expressjs.com/en/4x/api.html#res.sendFile
-});
-// hltbService.search('Nioh').then(result => console.log(result));
-app.listen(port, () => {
-    console.log(`Now listening on port ${port}`);
-});
+function main() {
+    console.log("*** Welcome to Time My Games ***");
+
+    var game = prompt("Please enter the name of a game: ");
+//    console.log('You entered: ' +  game);
+     hltbService.search(game).then(result => {
+        for(let game of result) {
+        	console.log(game.name + ' - ' + game.gameplayMain + ' hours');
+        }
+//        console.log(result);
+     }).finally(() => {
+     	prompt("Press ENTER to exit. . .");
+     });
+
+     return 0
+ }
+
+ main();
