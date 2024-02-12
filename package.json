@@ -1,5 +1,5 @@
 {
-  "name": "how-long-to-beat",
+  "name": "time-my-games",
   "version": "1.0.0",
   "description": "Gathers game data based on how many hours it takes to beat the game",
   "main": "index.js",

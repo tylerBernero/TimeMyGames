@@ -12,13 +12,16 @@ function main() {
 		var gameName = prompt("Please enter the name of a game: ").toLowerCase().trim();
 
 		promises.push(searchGame(gameName));
+		console.log('\nAdded ' + gameName + ' to the list\n');
+		console.log('Would you like to search for another game (1) or print list (2):');
+		doAgainPrompt = prompt("").trim();
 
-		doAgainPrompt = prompt("Would you like to search for another game? (Y/N) ").toLowerCase().trim();
-
-		if (doAgainPrompt === 'n') {
+		if (doAgainPrompt === '2') {
 			doAgain = false;
 		}
 	}
+
+	console.log("\nYour Games:");
 
 	Promise.all(promises)
 		.then(results => {
@@ -26,7 +29,7 @@ function main() {
 				console.log(resp[0].name + ' / ' + resp[0].gameplayMain + ' hours');
 			}
 		}).catch(error => {
-			console.log("Error loading games / times: " + e);
+			console.log("\nError loading games / times: " + e);
 		}).finally(() => {
 			prompt("Press any key to exit. . .");
 		});
@@ -37,16 +40,6 @@ function main() {
 
 function searchGame(gameName) {
 		return hltbService.search(gameName);
-//		hltbService.search(gameName).then(result => {
-//		console.log(gameName + ' returned ' + result.length + ' results');
-//			for(let game of result) {
-//				console.log(game.name + ' - ' + game.gameplayMain + ' hours');
-//
-//				if (game.name.includes(' ' + gameName) || game.name.includes(gameName + ' ')) {
-//					console.log('*** MATCH ***');
-//				}
-//			}
-//		});
  }
 
  main();
