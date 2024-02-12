@@ -3,7 +3,7 @@
 This is a simple app that takes user input to get a list of games and uses the "howlongtobeat" npm package to get those times for the user.
 
 ### To run via executables
-- Download the appropriate file for your OS
+- Download the appropriate file for your OS (click the file name then click "raw" in the top right of the screen to download)
   - Windows: time-my-games-win.exe
   - Mac: time-my-games-macos
   - Linux: time-my-games-linux
