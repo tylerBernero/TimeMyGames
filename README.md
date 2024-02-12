@@ -12,7 +12,8 @@ This is a simple app that takes user input to get a list of games and uses the "
 
 ### To use with Node.js:
 - Download [node](https://nodejs.org/en/download)
-- Download the index.js file in an easily accessible folder
-- Open the terminal and navigate to the directory where index.js is stored
-- run the command "node index.js"
+- Clone the project
+- Open the terminal and navigate to the directory where the project was cloned
+- Run the command "npm install" to download the packages needed to run the app
+- Run the command "node index.js" to run the app
 - Congrats! You just ran the How Long To Beat app
