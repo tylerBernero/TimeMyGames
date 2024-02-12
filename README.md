@@ -4,10 +4,10 @@ This is a simple app that takes user input to get a list of games and uses the "
 
 ### To run via executables
 - Download the appropriate file for your OS
-  - Windows: how-long-to-beat-win.exe
-  - Mac: how-long-to-beat-macos
-  - Linux: how-long-to-beat-linux
-- Double click the downloaded executable and the app should start in a new window
+  - Windows: time-my-games-win.exe
+  - Mac: time-my-games-macos
+  - Linux: time-my-games-linux
+- Double-click the downloaded executable and the app should start in a new window
 - Congrats! You just ran the How Long To Beat app
 
 ### To use with Node.js:
