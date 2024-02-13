@@ -8,7 +8,7 @@ This is a simple app that takes user input to get a list of games and uses the "
   - Mac: time-my-games-macos
   - Linux: time-my-games-linux
 - Double-click the downloaded executable and the app should start in a new window
-- Congrats! You just ran the How Long To Beat app
+- Congrats! You just ran the Time My Games app
 
 ### To use with Node.js:
 - Download [node](https://nodejs.org/en/download)
@@ -16,4 +16,4 @@ This is a simple app that takes user input to get a list of games and uses the "
 - Open the terminal and navigate to the directory where the project was cloned
 - Run the command "npm install" to download the packages needed to run the app
 - Run the command "node index.js" to run the app
-- Congrats! You just ran the How Long To Beat app
+- Congrats! You just ran the Time My Games app
